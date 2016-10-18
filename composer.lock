@@ -391,18 +391,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/alltube.git",
-                "reference": "b6f8e585be847ebf4d59c8592e76381ee74cf755"
+                "reference": "201d7c3376f2c94f18035962dfedacf988b020f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/b6f8e585be847ebf4d59c8592e76381ee74cf755",
-                "reference": "b6f8e585be847ebf4d59c8592e76381ee74cf755",
+                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/201d7c3376f2c94f18035962dfedacf988b020f0",
+                "reference": "201d7c3376f2c94f18035962dfedacf988b020f0",
                 "shasum": ""
             },
             "require": {
                 "mathmarques/smarty-view": "~1.1.0",
                 "ptachoire/process-builder-chain": "~1.2.0",
-                "rudloff/rtmpdump-bin": "~2.3",
                 "rudloff/smarty-plugin-noscheme": "~0.1.0",
                 "slim/slim": "~3.5.0",
                 "smarty/smarty": "~3.1.29",
@@ -413,6 +412,7 @@
                 "ffmpeg/ffmpeg": "dev-release",
                 "phpunit/phpunit": "~5.5.2",
                 "rg3/youtube-dl": "~2016.09.08",
+                "rudloff/rtmpdump-bin": "~2.3",
                 "squizlabs/php_codesniffer": "~2.7.0",
                 "symfony/var-dumper": "~3.1.0"
             },
@@ -450,35 +450,7 @@
             ],
             "description": "HTML GUI for youtube-dl",
             "homepage": "http://alltubedownload.net/",
-            "time": "2016-10-18 08:03:50"
-        },
-        {
-            "name": "rudloff/rtmpdump-bin",
-            "version": "2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Rudloff/rtmpdump-bin.git",
-                "reference": "133cdd80e3bab66593e88a5276158596383afd97"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/rtmpdump-bin/zipball/133cdd80e3bab66593e88a5276158596383afd97",
-                "reference": "133cdd80e3bab66593e88a5276158596383afd97",
-                "shasum": ""
-            },
-            "require-dev": {
-                "rtmpdump/rtmpdump": "2.3"
-            },
-            "bin": [
-                "rtmpdump"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "description": "rtmpdump binary for Linux 64 bit",
-            "time": "2016-04-12 19:17:32"
+            "time": "2016-10-18 08:22:35"
         },
         {
             "name": "rudloff/smarty-plugin-noscheme",
