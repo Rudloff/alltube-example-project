@@ -22,3 +22,5 @@ $downloader->getURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'worst');
 
 //Get the whole decoded JSON extracted by youtube-dl
 $downloader->getJSON('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+
+//See complete class documentation here: https://alltube.surge.sh/classes/Alltube.VideoDownload.html
