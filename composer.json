@@ -3,6 +3,6 @@
 	"description": "Example project to show how to use Alltube as a library",
 	"license": "GPL-3.0",
 	"require": {
-		"rudloff/alltube": "dev-develop"
+		"rudloff/alltube": "0.6.0"
 	}
 }

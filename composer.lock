@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a02e2ce4e9d96aebed29c824815de436",
-    "content-hash": "295302647329b3b481147aa4a628e7c9",
+    "hash": "6c19a99e40809edb8daddf56d17bbe27",
+    "content-hash": "1fc8f6ef117d4ab8569d2ff0c5fb2f22",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -387,16 +387,16 @@
         },
         {
             "name": "rudloff/alltube",
-            "version": "dev-develop",
+            "version": "0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/alltube.git",
-                "reference": "201d7c3376f2c94f18035962dfedacf988b020f0"
+                "reference": "51ee3526fc5974a54a7505b73ed4bccb81114721"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/201d7c3376f2c94f18035962dfedacf988b020f0",
-                "reference": "201d7c3376f2c94f18035962dfedacf988b020f0",
+                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/51ee3526fc5974a54a7505b73ed4bccb81114721",
+                "reference": "51ee3526fc5974a54a7505b73ed4bccb81114721",
                 "shasum": ""
             },
             "require": {
@@ -450,7 +450,7 @@
             ],
             "description": "HTML GUI for youtube-dl",
             "homepage": "http://alltubedownload.net/",
-            "time": "2016-10-18 08:22:35"
+            "time": "2016-10-19 16:34:05"
         },
         {
             "name": "rudloff/smarty-plugin-noscheme",
@@ -720,9 +720,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "rudloff/alltube": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
