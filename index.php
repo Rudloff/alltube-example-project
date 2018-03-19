@@ -8,7 +8,7 @@ require_once __DIR__.'/vendor/autoload.php';
 $downloader = new VideoDownload(
     new Config(
         [
-            'youtubedl' => '/usr/local/bin/youtube-dl',
+            'youtubedl' => '/usr/lib/python3/dist-packages/youtube_dl/__main__.py',
             'python'    => '/usr/bin/python',
         ]
     )
