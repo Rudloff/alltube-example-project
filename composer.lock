@@ -4,22 +4,126 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c19a99e40809edb8daddf56d17bbe27",
-    "content-hash": "1fc8f6ef117d4ab8569d2ff0c5fb2f22",
+    "content-hash": "9b4b169543e082622004a876a4b3745b",
     "packages": [
         {
-            "name": "container-interop/container-interop",
-            "version": "1.1.0",
+            "name": "aura/session",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/container-interop/container-interop.git",
-                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+                "url": "https://github.com/auraphp/Aura.Session.git",
+                "reference": "7d2f7d41ad693970b5b6b83facca0961d3378883"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
-                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "url": "https://api.github.com/repos/auraphp/Aura.Session/zipball/7d2f7d41ad693970b5b6b83facca0961d3378883",
+                "reference": "7d2f7d41ad693970b5b6b83facca0961d3378883",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "aura/di": "~2.0"
+            },
+            "suggest": {
+                "ext-mcrypt": "Mcrypt generates the next best secure CSRF tokens.",
+                "ext-openssl": "OpenSSL generates the best secure CSRF tokens.",
+                "ircmaxell/random-lib": "A Library For Generating Secure Random Numbers",
+                "paragonie/random_compat": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7"
+            },
+            "type": "library",
+            "extra": {
+                "aura": {
+                    "type": "library",
+                    "config": {
+                        "common": "Aura\\Session\\_Config\\Common"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Session\\": "src/",
+                    "Aura\\Session\\_Config\\": "config/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Session Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Session/contributors"
+                }
+            ],
+            "description": "Provides session management functionality, including lazy session starting, session segments, next-request-only (\"flash\") values, and CSRF tools.",
+            "homepage": "https://github.com/auraphp/Aura.Session",
+            "keywords": [
+                "csrf",
+                "flash",
+                "flash message",
+                "session",
+                "sessions"
+            ],
+            "time": "2016-10-03T20:28:32+00:00"
+        },
+        {
+            "name": "barracudanetworks/archivestream-php",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barracudanetworks/ArchiveStream-php.git",
+                "reference": "1bf98097d1e9b137fd40081f26abb0a17b097ef7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barracudanetworks/ArchiveStream-php/zipball/1bf98097d1e9b137fd40081f26abb0a17b097ef7",
+                "reference": "1bf98097d1e9b137fd40081f26abb0a17b097ef7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gmp": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Barracuda\\ArchiveStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A library for dynamically streaming dynamic tar or zip files without the need to have the complete file stored on the server.",
+            "homepage": "https://github.com/barracudanetworks/ArchiveStream-php",
+            "keywords": [
+                "archive",
+                "php",
+                "stream",
+                "tar",
+                "zip"
+            ],
+            "time": "2017-01-13T14:52:38+00:00"
+        },
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -32,44 +136,106 @@
                 "MIT"
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
-            "time": "2014-12-30 15:22:37"
+            "homepage": "https://github.com/container-interop/container-interop",
+            "time": "2017-02-14T19:40:03+00:00"
         },
         {
-            "name": "jeremykendall/php-domain-parser",
-            "version": "3.0.0",
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jeremykendall/php-domain-parser.git",
-                "reference": "896e7e70f02bd4fd77190052799bc61e4d779672"
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeremykendall/php-domain-parser/zipball/896e7e70f02bd4fd77190052799bc61e4d779672",
-                "reference": "896e7e70f02bd4fd77190052799bc61e4d779672",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "ext-intl": "*",
-                "ext-mbstring": "*",
-                "php": ">=5.3.0"
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
             },
             "require-dev": {
-                "jeremykendall/debug-die": "0.0.1.*",
-                "mikey179/vfsstream": "~1.4",
-                "phpunit/phpunit": "~4.4"
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "psr/log": "^1.0"
             },
-            "bin": [
-                "bin/parse",
-                "bin/update-psl"
-            ],
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Pdp\\": "src/"
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-06-22T18:50:49+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
                 },
                 "files": [
-                    "src/pdp-parse-url.php"
+                    "src/functions_include.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -78,60 +244,54 @@
             ],
             "authors": [
                 {
-                    "name": "Jeremy Kendall",
-                    "homepage": "http://about.me/jeremykendall",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/jeremykendall/php-domain-parser/graphs/contributors"
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
                 }
             ],
-            "description": "Public Suffix List based URL parsing implemented in PHP.",
-            "homepage": "https://github.com/jeremykendall/php-domain-parser",
+            "description": "Guzzle promises library",
             "keywords": [
-                "Public Suffix List",
-                "domain parsing",
-                "url parsing"
+                "promise"
             ],
-            "time": "2015-03-30 12:49:45"
+            "time": "2016-12-20T10:07:11+00:00"
         },
         {
-            "name": "league/uri",
-            "version": "4.1.1",
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/uri.git",
-                "reference": "0cbce9fe7d9808690ebda67b110ad96bcae9daee"
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri/zipball/0cbce9fe7d9808690ebda67b110ad96bcae9daee",
-                "reference": "0cbce9fe7d9808690ebda67b110ad96bcae9daee",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
                 "shasum": ""
             },
             "require": {
-                "ext-fileinfo": "*",
-                "ext-intl": "*",
-                "ext-mbstring": "*",
-                "jeremykendall/php-domain-parser": "^3.0",
-                "php": ">=5.5.9",
-                "psr/http-message": "^1.0"
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "^1.9",
-                "phpunit/phpunit": "^4.0"
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "League\\Uri\\": "src"
-                }
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -139,26 +299,74 @@
             ],
             "authors": [
                 {
-                    "name": "Ignace Nyamagana Butera",
-                    "email": "nyamsprod@gmail.com",
-                    "homepage": "https://nyamsprod.com"
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
-            "description": "URI manipulation library",
-            "homepage": "http://url.thephpleague.com",
+            "description": "PSR-7 message implementation that also provides common utility methods",
             "keywords": [
-                "data",
-                "data-uri",
-                "ftp",
                 "http",
-                "parse_url",
-                "psr-7",
-                "rfc3986",
+                "message",
+                "request",
+                "response",
+                "stream",
                 "uri",
-                "url",
-                "ws"
+                "url"
             ],
-            "time": "2016-03-24 08:38:29"
+            "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "hamcrest/hamcrest-php",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hamcrest/hamcrest-php.git",
+                "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/776503d3a8e85d4f9a1148614f95b7a608b046ad",
+                "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3|^7.0"
+            },
+            "replace": {
+                "cordoval/hamcrest-php": "*",
+                "davedevelopment/hamcrest-php": "*",
+                "kodova/hamcrest-php": "*"
+            },
+            "require-dev": {
+                "phpunit/php-file-iterator": "1.3.3",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "hamcrest"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "description": "This is the PHP port of Hamcrest Matchers",
+            "keywords": [
+                "test"
+            ],
+            "time": "2016-01-20T08:20:44+00:00"
         },
         {
             "name": "mathmarques/smarty-view",
@@ -208,24 +416,92 @@
                 "template",
                 "view"
             ],
-            "time": "2016-08-25 19:04:49"
+            "time": "2016-08-25T19:04:49+00:00"
         },
         {
-            "name": "nikic/fast-route",
-            "version": "v1.0.1",
+            "name": "mockery/mockery",
+            "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nikic/FastRoute.git",
-                "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af"
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "1bac8c362b12f522fdd1f1fa3556284c91affa38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/8ea928195fa9b907f0d6e48312d323c1a13cc2af",
-                "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/1bac8c362b12f522fdd1f1fa3556284c91affa38",
+                "reference": "1bac8c362b12f522fdd1f1fa3556284c91affa38",
+                "shasum": ""
+            },
+            "require": {
+                "hamcrest/hamcrest-php": "~2.0",
+                "lib-pcre": ">=7.0",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7|~6.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mockery": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pádraic Brady",
+                    "email": "padraic.brady@gmail.com",
+                    "homepage": "http://blog.astrumfutura.com"
+                },
+                {
+                    "name": "Dave Marshall",
+                    "email": "dave.marshall@atstsolutions.co.uk",
+                    "homepage": "http://davedevelopment.co.uk"
+                }
+            ],
+            "description": "Mockery is a simple yet flexible PHP mock object framework for use in unit testing with PHPUnit, PHPSpec or any other testing framework. Its core goal is to offer a test double framework with a succinct API capable of clearly defining all possible object operations and interactions using a human readable Domain Specific Language (DSL). Designed as a drop in alternative to PHPUnit's phpunit-mock-objects library, Mockery is easy to integrate with PHPUnit and can operate alongside phpunit-mock-objects without the World ending.",
+            "homepage": "http://github.com/mockery/mockery",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "library",
+                "mock",
+                "mock objects",
+                "mockery",
+                "stub",
+                "test",
+                "test double",
+                "testing"
+            ],
+            "time": "2017-10-06T16:20:43+00:00"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|~5.7"
             },
             "type": "library",
             "autoload": {
@@ -251,29 +527,243 @@
                 "router",
                 "routing"
             ],
-            "time": "2016-06-12 19:08:51"
+            "time": "2018-02-13T20:26:39+00:00"
         },
         {
-            "name": "pimple/pimple",
-            "version": "v3.0.2",
+            "name": "php-mock/php-mock",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
+                "url": "https://github.com/php-mock/php-mock.git",
+                "reference": "bfa2d17d64dbf129073a7ba2051a96ce52749570"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
-                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "url": "https://api.github.com/repos/php-mock/php-mock/zipball/bfa2d17d64dbf129073a7ba2051a96ce52749570",
+                "reference": "bfa2d17d64dbf129073a7ba2051a96ce52749570",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.5",
+                "phpunit/php-text-template": "^1"
+            },
+            "replace": {
+                "malkusch/php-mock": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4|^5"
+            },
+            "suggest": {
+                "php-mock/php-mock-mockery": "Allows using PHPMockery for Mockery integration",
+                "php-mock/php-mock-phpunit": "Allows integration into PHPUnit testcase with the trait PHPMock."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpmock\\": [
+                        "classes/",
+                        "tests/unit/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Malkusch",
+                    "email": "markus@malkusch.de",
+                    "homepage": "http://markus.malkusch.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP-Mock can mock built-in PHP functions (e.g. time()). PHP-Mock relies on PHP's namespace fallback policy. No further extension is needed.",
+            "homepage": "https://github.com/php-mock/php-mock",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "function",
+                "mock",
+                "stub",
+                "test",
+                "test double"
+            ],
+            "time": "2015-11-11T22:37:09+00:00"
+        },
+        {
+            "name": "php-mock/php-mock-integration",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mock/php-mock-integration.git",
+                "reference": "e83fb65dd20cd3cf250d554cbd4682b96b684f4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mock/php-mock-integration/zipball/e83fb65dd20cd3cf250d554cbd4682b96b684f4b",
+                "reference": "e83fb65dd20cd3cf250d554cbd4682b96b684f4b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "php-mock/php-mock": "^1",
+                "phpunit/php-text-template": "^1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4|^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpmock\\integration\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Malkusch",
+                    "email": "markus@malkusch.de",
+                    "homepage": "http://markus.malkusch.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Integration package for PHP-Mock",
+            "homepage": "https://github.com/php-mock/php-mock-integration",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "function",
+                "mock",
+                "stub",
+                "test",
+                "test double"
+            ],
+            "time": "2015-10-26T21:21:42+00:00"
+        },
+        {
+            "name": "php-mock/php-mock-mockery",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mock/php-mock-mockery.git",
+                "reference": "f3d67a36558c6d1fb912ed8ba786fffaf94e0755"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mock/php-mock-mockery/zipball/f3d67a36558c6d1fb912ed8ba786fffaf94e0755",
+                "reference": "f3d67a36558c6d1fb912ed8ba786fffaf94e0755",
+                "shasum": ""
+            },
+            "require": {
+                "mockery/mockery": "^1",
+                "php": ">=5.6",
+                "php-mock/php-mock-integration": "^1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4|^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpmock\\mockery\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "WTFPL"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Malkusch",
+                    "email": "markus@malkusch.de",
+                    "homepage": "http://markus.malkusch.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mock built-in PHP functions (e.g. time()) with Mockery. This package relies on PHP's namespace fallback policy. No further extension is needed.",
+            "homepage": "https://github.com/php-mock/php-mock-mockery",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "function",
+                "mock",
+                "mockery",
+                "stub",
+                "test",
+                "test double"
+            ],
+            "time": "2017-10-13T09:34:01+00:00"
+        },
+        {
+            "name": "phpunit/php-text-template",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-text-template.git",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Simple template engine.",
+            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+            "keywords": [
+                "template"
+            ],
+            "time": "2015-06-21T13:50:34+00:00"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
@@ -297,7 +787,56 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2015-09-11 15:10:35"
+            "time": "2018-01-21T07:42:36+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/http-message",
@@ -347,29 +886,40 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06 14:39:51"
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
-            "name": "ptachoire/process-builder-chain",
-            "version": "1.2.0",
+            "name": "rinvex/country",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/krichprollsch/process-builder-chain.git",
-                "reference": "465055dbcc3b5ef792a768df935571551de4781a"
+                "url": "https://github.com/rinvex/country.git",
+                "reference": "e32228ef43f26d3b02296be9454f842c52d492f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krichprollsch/process-builder-chain/zipball/465055dbcc3b5ef792a768df935571551de4781a",
-                "reference": "465055dbcc3b5ef792a768df935571551de4781a",
+                "url": "https://api.github.com/repos/rinvex/country/zipball/e32228ef43f26d3b02296be9454f842c52d492f3",
+                "reference": "e32228ef43f26d3b02296be9454f842c52d492f3",
                 "shasum": ""
             },
             "require": {
-                "symfony/process": "~2.5 || ~3.0"
+                "php": "^7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Chain": "src/"
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Rinvex\\Country\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -378,61 +928,95 @@
             ],
             "authors": [
                 {
-                    "name": "Pierre Tachoire",
-                    "email": "pierre.tachoire@gmail.com"
+                    "name": "Rinvex LLC",
+                    "email": "help@rinvex.com",
+                    "homepage": "https://rinvex.com"
+                },
+                {
+                    "name": "Abdelrahman Omran",
+                    "email": "me@omranic.com",
+                    "homepage": "https://omranic.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "The Generous Laravel Community",
+                    "homepage": "https://github.com/rinvex/country/contributors"
                 }
             ],
-            "description": "Add ability to chain symfony processes",
-            "time": "2016-04-10 08:33:20"
+            "description": "Rinvex Country is a simple and lightweight package for retrieving country details with flexibility. A whole bunch of data including name, demonym, capital, iso codes, dialling codes, geo data, currencies, flags, emoji, and other attributes for all 250 countries worldwide at your fingertips.",
+            "homepage": "https://rinvex.com",
+            "keywords": [
+                "Flexible",
+                "Simple",
+                "countries",
+                "country",
+                "currencies",
+                "demonym",
+                "dialling",
+                "emoji",
+                "flags",
+                "geographic",
+                "languages",
+                "rinvex",
+                "svg"
+            ],
+            "time": "2017-03-07T18:40:20+00:00"
         },
         {
             "name": "rudloff/alltube",
-            "version": "0.6.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/alltube.git",
-                "reference": "51ee3526fc5974a54a7505b73ed4bccb81114721"
+                "reference": "6e0464ebbeee989016e7711b3ec7d27a5f1b5404"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/51ee3526fc5974a54a7505b73ed4bccb81114721",
-                "reference": "51ee3526fc5974a54a7505b73ed4bccb81114721",
+                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/6e0464ebbeee989016e7711b3ec7d27a5f1b5404",
+                "reference": "6e0464ebbeee989016e7711b3ec7d27a5f1b5404",
                 "shasum": ""
             },
             "require": {
+                "aura/session": "~2.1.0",
+                "barracudanetworks/archivestream-php": "~1.0.5",
+                "guzzlehttp/guzzle": "~6.3.0",
                 "mathmarques/smarty-view": "~1.1.0",
-                "ptachoire/process-builder-chain": "~1.2.0",
-                "rudloff/smarty-plugin-noscheme": "~0.1.0",
-                "slim/slim": "~3.5.0",
-                "smarty/smarty": "~3.1.29",
-                "symfony/process": "~3.1.0",
-                "symfony/yaml": "~3.1.0"
+                "php-mock/php-mock-mockery": "~1.2.0",
+                "rinvex/country": "~3.1.0",
+                "slim/slim": "~3.9.2",
+                "smarty-gettext/smarty-gettext": "~1.5.1",
+                "symfony/process": "~3.4.1",
+                "symfony/yaml": "~3.4.1",
+                "zonuexe/http-accept-language": "~0.4.1"
             },
             "require-dev": {
-                "ffmpeg/ffmpeg": "dev-release",
-                "phpunit/phpunit": "~5.5.2",
-                "rg3/youtube-dl": "~2016.09.08",
-                "rudloff/rtmpdump-bin": "~2.3",
-                "squizlabs/php_codesniffer": "~2.7.0",
-                "symfony/var-dumper": "~3.1.0"
+                "anam/phantomjs-linux-x86-binary": "~2.1.1",
+                "doctrine/instantiator": "~1.0.0",
+                "ffmpeg/ffmpeg": "~3.4.1",
+                "heroku/heroku-buildpack-php": "*",
+                "phpunit/phpunit": "~6.5.2",
+                "rg3/youtube-dl": "2018.01.21",
+                "squizlabs/php_codesniffer": "~3.2.2",
+                "symfony/var-dumper": "~3.4.1"
             },
             "type": "project",
             "extra": {
                 "paas": {
                     "nginx-includes": [
-                        "nginx.conf"
+                        "resources/nginx.conf"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Alltube\\": "classes/",
-                    "Alltube\\Controller\\": "controllers/"
+                    "Alltube\\Controller\\": "controllers/",
+                    "Alltube\\Test\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0"
+                "GPL-3.0-only"
             ],
             "authors": [
                 {
@@ -450,68 +1034,28 @@
             ],
             "description": "HTML GUI for youtube-dl",
             "homepage": "http://alltubedownload.net/",
-            "time": "2016-10-19 16:34:05"
-        },
-        {
-            "name": "rudloff/smarty-plugin-noscheme",
-            "version": "0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Rudloff/smarty-plugin-noscheme.git",
-                "reference": "7b64350bd255690e44db497e50bb5edc5e87d5e6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/smarty-plugin-noscheme/zipball/7b64350bd255690e44db497e50bb5edc5e87d5e6",
-                "reference": "7b64350bd255690e44db497e50bb5edc5e87d5e6",
-                "shasum": ""
-            },
-            "require": {
-                "league/uri": "~4.1.1"
-            },
-            "require-dev": {
-                "symfony/var-dumper": "~3.0.1"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "modifier.noscheme.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Pierre Rudloff",
-                    "email": "contact@rudloff.pro",
-                    "homepage": "https://rudloff.pro/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Smarty modifier that removes the scheme in URLs",
-            "time": "2016-04-09 00:40:13"
+            "time": "2018-01-26T19:11:53+00:00"
         },
         {
             "name": "slim/slim",
-            "version": "3.5.0",
+            "version": "3.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Slim.git",
-                "reference": "184352bc1913d7ba552ab4131d62f4730ddb0893"
+                "reference": "4086d0106cf5a7135c69fce4161fe355a8feb118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/184352bc1913d7ba552ab4131d62f4730ddb0893",
-                "reference": "184352bc1913d7ba552ab4131d62f4730ddb0893",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/4086d0106cf5a7135c69fce4161fe355a8feb118",
+                "reference": "4086d0106cf5a7135c69fce4161fe355a8feb118",
                 "shasum": ""
             },
             "require": {
-                "container-interop/container-interop": "^1.1",
+                "container-interop/container-interop": "^1.2",
                 "nikic/fast-route": "^1.0",
                 "php": ">=5.5.0",
                 "pimple/pimple": "^3.0",
+                "psr/container": "^1.0",
                 "psr/http-message": "^1.0"
             },
             "provide": {
@@ -554,27 +1098,81 @@
                 }
             ],
             "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
-            "homepage": "http://slimframework.com",
+            "homepage": "https://slimframework.com",
             "keywords": [
                 "api",
                 "framework",
                 "micro",
                 "router"
             ],
-            "time": "2016-07-26 15:12:13"
+            "time": "2017-11-26T19:13:09+00:00"
         },
         {
-            "name": "smarty/smarty",
-            "version": "v3.1.30",
+            "name": "smarty-gettext/smarty-gettext",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "ed2b7f1146cfda13df1eea8a5f707a1b771b6e7e"
+                "url": "https://github.com/smarty-gettext/smarty-gettext.git",
+                "reference": "00fe2fcbc41e24e0245cd9d73f96bc7b0337972d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/ed2b7f1146cfda13df1eea8a5f707a1b771b6e7e",
-                "reference": "ed2b7f1146cfda13df1eea8a5f707a1b771b6e7e",
+                "url": "https://api.github.com/repos/smarty-gettext/smarty-gettext/zipball/00fe2fcbc41e24e0245cd9d73f96bc7b0337972d",
+                "reference": "00fe2fcbc41e24e0245cd9d73f96bc7b0337972d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gettext": "*",
+                "ext-pcre": "*",
+                "php": "~5.3|~7.0"
+            },
+            "require-dev": {
+                "azatoth/php-pgettext": "~1.0",
+                "smarty/smarty": "3.1.*"
+            },
+            "suggest": {
+                "azatoth/php-pgettext": "Support msgctxt for {t} via context parameter"
+            },
+            "bin": [
+                "tsmarty2c.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "block.t.php",
+                    "function.locale.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "Sagi Bashari",
+                    "email": "sagi@boom.org.il"
+                },
+                {
+                    "name": "Elan Ruusamäe",
+                    "email": "glen@delfi.ee"
+                }
+            ],
+            "description": "Gettext plugin enabling internationalization in Smarty Package files",
+            "homepage": "https://github.com/smarty-gettext/smarty-gettext",
+            "time": "2017-05-12T12:14:46+00:00"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v3.1.31",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "c7d42e4a327c402897dd587871434888fde1e7a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/c7d42e4a327c402897dd587871434888fde1e7a9",
+                "reference": "c7d42e4a327c402897dd587871434888fde1e7a9",
                 "shasum": ""
             },
             "require": {
@@ -587,10 +1185,8 @@
                 }
             },
             "autoload": {
-                "classmap": [
-                    "libs/Smarty.class.php",
-                    "libs/SmartyBC.class.php",
-                    "libs/sysplugins/"
+                "files": [
+                    "libs/bootstrap.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -616,29 +1212,29 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-08-07 18:46:49"
+            "time": "2016-12-14T21:57:25+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v3.1.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "66de154ae86b1a07001da9fbffd620206e4faf94"
+                "reference": "cc4aea21f619116aaf1c58016a944e4821c8e8af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/66de154ae86b1a07001da9fbffd620206e4faf94",
-                "reference": "66de154ae86b1a07001da9fbffd620206e4faf94",
+                "url": "https://api.github.com/repos/symfony/process/zipball/cc4aea21f619116aaf1c58016a944e4821c8e8af",
+                "reference": "cc4aea21f619116aaf1c58016a944e4821c8e8af",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -665,29 +1261,38 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-29 14:13:09"
+            "time": "2018-02-12T17:55:00+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.5",
+            "version": "v3.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "368b9738d4033c8b93454cb0dbd45d305135a6d3"
+                "reference": "6af42631dcf89e9c616242c900d6c52bd53bd1bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/368b9738d4033c8b93454cb0dbd45d305135a6d3",
-                "reference": "368b9738d4033c8b93454cb0dbd45d305135a6d3",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/6af42631dcf89e9c616242c900d6c52bd53bd1bb",
+                "reference": "6af42631dcf89e9c616242c900d6c52bd53bd1bb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
+            },
+            "require-dev": {
+                "symfony/console": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -714,7 +1319,48 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-25 08:27:07"
+            "time": "2018-02-16T09:50:28+00:00"
+        },
+        {
+            "name": "zonuexe/http-accept-language",
+            "version": "0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BaguettePHP/http-accept-language.git",
+                "reference": "f71422b1200737aa9d7c7fa83f07cbe4616198d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BaguettePHP/http-accept-language/zipball/f71422b1200737aa9d7c7fa83f07cbe4616198d5",
+                "reference": "f71422b1200737aa9d7c7fa83f07cbe4616198d5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-intl": "*"
+            },
+            "require-dev": {
+                "phploc/phploc": "*",
+                "phpunit/phpunit": "4.1.*",
+                "theseer/phpdox": "0.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Teto\\HTTP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "USAMI Kenta",
+                    "email": "tadsan@zonu.me"
+                }
+            ],
+            "description": "HTTP Accept-Language Header parser",
+            "time": "2014-10-19T09:22:18+00:00"
         }
     ],
     "packages-dev": [],
