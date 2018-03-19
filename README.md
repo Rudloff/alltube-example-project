@@ -1,5 +1,5 @@
 # AllTube example project
-Example project to show how to use Alltube as a library
+Example project to show how to use AllTube as a library
 
 ## Setup
 
