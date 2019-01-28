@@ -2,7 +2,6 @@
 /**
  * Example showing how to download a video to the server.
  */
-
 use Alltube\Config;
 use Alltube\VideoDownload;
 use GuzzleHttp\Client;
@@ -28,7 +27,7 @@ $tmp = tempnam(null, 'alltube');
 $urls = $downloader->getURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
 // Output the name of the temporary file.
-print('Downloading video to '.$tmp.PHP_EOL);
+echo 'Downloading video to '.$tmp.PHP_EOL;
 
 // Download the video to the temporary file.
 $client->request('GET', $urls[0], ['sink' => $tmp]);

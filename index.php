@@ -2,7 +2,6 @@
 /**
  * Example showing how to get information about a video.
  */
-
 use Alltube\Config;
 use Alltube\VideoDownload;
 
