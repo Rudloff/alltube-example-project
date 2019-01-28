@@ -1,8 +1,8 @@
 {
-	"name": "rudloff/alltube-example-project",
-	"description": "Example project to show how to use Alltube as a library",
-	"license": "GPL-3.0",
-	"require": {
-		"rudloff/alltube": "~1.2.5"
-	}
+  "name": "rudloff/alltube-example-project",
+  "description": "Example project to show how to use Alltube as a library",
+  "license": "GPL-3.0",
+  "require": {
+    "rudloff/alltube": "~1.2.5"
+  }
 }
