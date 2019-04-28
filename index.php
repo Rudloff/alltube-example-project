@@ -3,26 +3,27 @@
  * Example showing how to get information about a video.
  */
 use Alltube\Config;
-use Alltube\VideoDownload;
+use Alltube\Video;
 
 require_once __DIR__.'/vendor/autoload.php';
 
-$downloader = new VideoDownload(
-    new Config(
-        [
-            'youtubedl' => '/usr/lib/python3/dist-packages/youtube_dl/__main__.py',
-            'python'    => '/usr/bin/python',
-        ]
-    )
+Config::setOptions(
+    [
+        'youtubedl' => '/usr/lib/python3/dist-packages/youtube_dl/__main__.py',
+        'python'    => '/usr/bin/python',
+    ]
 );
 
-//Extract the URL of a video from a webpage
-var_dump($downloader->getURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ'));
+$video = new Video('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
-//Get a specific format
-var_dump($downloader->getURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'worst'));
+// Extract the URL of a video from a webpage
+var_dump($video->getUrl());
 
-//Get the whole decoded JSON extracted by youtube-dl
-var_dump($downloader->getJSON('https://www.youtube.com/watch?v=dQw4w9WgXcQ'));
+// Get a specific format
+$video = new Video('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'worst');
+var_dump($video->getUrl());
 
-//See complete class documentation here: https://alltube.surge.sh/classes/Alltube.VideoDownload.html
+// Get the whole decoded JSON extracted by youtube-dl
+var_dump($video->getJson());
+
+// See complete class documentation here: https://dev.rudloff.pro/alltube/docs/classes/Alltube.Video.html

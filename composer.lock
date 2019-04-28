@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78605f8adc4082ce9852d2a87955dea4",
+    "content-hash": "a573097a46f2a382ede4aee0f8e77bb4",
     "packages": [
         {
             "name": "aura/session",
@@ -372,16 +372,16 @@
         },
         {
             "name": "mathmarques/smarty-view",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mathmarques/Smarty-View.git",
-                "reference": "c8f8501a0be4c290e1165fcb9e5064952ef6969d"
+                "reference": "2ab996e79efcc600cc324b6469c1cdbcd189c9fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mathmarques/Smarty-View/zipball/c8f8501a0be4c290e1165fcb9e5064952ef6969d",
-                "reference": "c8f8501a0be4c290e1165fcb9e5064952ef6969d",
+                "url": "https://api.github.com/repos/mathmarques/Smarty-View/zipball/2ab996e79efcc600cc324b6469c1cdbcd189c9fe",
+                "reference": "2ab996e79efcc600cc324b6469c1cdbcd189c9fe",
                 "shasum": ""
             },
             "require": {
@@ -418,20 +418,20 @@
                 "template",
                 "view"
             ],
-            "time": "2016-08-25T19:04:49+00:00"
+            "time": "2019-03-31T14:42:41+00:00"
         },
         {
             "name": "mockery/mockery",
-            "version": "1.2.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "100633629bf76d57430b86b7098cd6beb996a35a"
+                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/100633629bf76d57430b86b7098cd6beb996a35a",
-                "reference": "100633629bf76d57430b86b7098cd6beb996a35a",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
+                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
                 "shasum": ""
             },
             "require": {
@@ -440,7 +440,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7.10|~6.5|~7.0"
+                "phpunit/phpunit": "~5.7.10|~6.5|~7.0|~8.0"
             },
             "type": "library",
             "extra": {
@@ -483,7 +483,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2018-10-02T21:52:37+00:00"
+            "time": "2019-02-13T09:37:52+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -533,27 +533,27 @@
         },
         {
             "name": "php-mock/php-mock",
-            "version": "2.0.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-mock/php-mock.git",
-                "reference": "22d297231118e6fd5b9db087fbe1ef866c2b95d2"
+                "reference": "e2eea560cb01502148ca895221f0b58806c5a4df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-mock/php-mock/zipball/22d297231118e6fd5b9db087fbe1ef866c2b95d2",
-                "reference": "22d297231118e6fd5b9db087fbe1ef866c2b95d2",
+                "url": "https://api.github.com/repos/php-mock/php-mock/zipball/e2eea560cb01502148ca895221f0b58806c5a4df",
+                "reference": "e2eea560cb01502148ca895221f0b58806c5a4df",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6",
+                "php": "^5.6 || ^7.0",
                 "phpunit/php-text-template": "^1"
             },
             "replace": {
                 "malkusch/php-mock": "*"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.0"
             },
             "suggest": {
                 "php-mock/php-mock-phpunit": "Allows integration into PHPUnit testcase with the trait PHPMock."
@@ -565,7 +565,10 @@
                         "classes/",
                         "tests/"
                     ]
-                }
+                },
+                "files": [
+                    "autoload.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -590,7 +593,7 @@
                 "test",
                 "test double"
             ],
-            "time": "2017-02-17T20:52:52+00:00"
+            "time": "2019-04-05T22:15:19+00:00"
         },
         {
             "name": "php-mock/php-mock-integration",
@@ -1005,16 +1008,16 @@
         },
         {
             "name": "rudloff/alltube",
-            "version": "1.2.5",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rudloff/alltube.git",
-                "reference": "aa04d773ef108eb6a203835292ba3f617f8e5974"
+                "reference": "a0811c6dc4a7ac6102aede1b439fa8e53ab1ed3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/aa04d773ef108eb6a203835292ba3f617f8e5974",
-                "reference": "aa04d773ef108eb6a203835292ba3f617f8e5974",
+                "url": "https://api.github.com/repos/Rudloff/alltube/zipball/a0811c6dc4a7ac6102aede1b439fa8e53ab1ed3a",
+                "reference": "a0811c6dc4a7ac6102aede1b439fa8e53ab1ed3a",
                 "shasum": ""
             },
             "require": {
@@ -1024,7 +1027,7 @@
                 "mathmarques/smarty-view": "~1.1.0",
                 "php-mock/php-mock-mockery": "~1.3.0",
                 "rinvex/countries": "~3.1.0",
-                "slim/slim": "~3.11.0",
+                "slim/slim": "~3.12.1",
                 "smarty-gettext/smarty-gettext": "~1.6.0",
                 "symfony/process": "~3.4.1",
                 "symfony/yaml": "~3.4.1",
@@ -1035,8 +1038,9 @@
                 "doctrine/instantiator": "~1.0.0",
                 "ffmpeg/ffmpeg": "4.0.3",
                 "heroku/heroku-buildpack-php": "*",
+                "phpstan/phpstan": "~0.9.2",
                 "phpunit/phpunit": "~6.5.2",
-                "rg3/youtube-dl": "2019.01.17",
+                "rg3/youtube-dl": "2019.04.24",
                 "squizlabs/php_codesniffer": "~3.4.0",
                 "symfony/var-dumper": "~3.4.1"
             },
@@ -1051,6 +1055,8 @@
             "autoload": {
                 "psr-4": {
                     "Alltube\\": "classes/",
+                    "Alltube\\Stream\\": "classes/streams/",
+                    "Alltube\\Exception\\": "classes/exceptions/",
                     "Alltube\\Controller\\": "controllers/",
                     "Alltube\\Test\\": "tests/"
                 }
@@ -1075,20 +1081,20 @@
             ],
             "description": "HTML GUI for youtube-dl",
             "homepage": "http://alltubedownload.net/",
-            "time": "2019-01-20T10:33:52+00:00"
+            "time": "2019-04-28T14:06:00+00:00"
         },
         {
             "name": "slim/slim",
-            "version": "3.11.0",
+            "version": "3.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Slim.git",
-                "reference": "d378e70431e78ee92ee32ddde61ecc72edf5dc0a"
+                "reference": "eaee12ef8d0750db62b8c548016d82fb33addb6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/d378e70431e78ee92ee32ddde61ecc72edf5dc0a",
-                "reference": "d378e70431e78ee92ee32ddde61ecc72edf5dc0a",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/eaee12ef8d0750db62b8c548016d82fb33addb6b",
+                "reference": "eaee12ef8d0750db62b8c548016d82fb33addb6b",
                 "shasum": ""
             },
             "require": {
@@ -1146,7 +1152,7 @@
                 "micro",
                 "router"
             ],
-            "time": "2018-09-16T10:54:21+00:00"
+            "time": "2019-04-16T16:47:29+00:00"
         },
         {
             "name": "smarty-gettext/smarty-gettext",
@@ -1258,16 +1264,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.10.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+                "reference": "82ebae02209c21113908c229e9883c419720738a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
+                "reference": "82ebae02209c21113908c229e9883c419720738a",
                 "shasum": ""
             },
             "require": {
@@ -1279,7 +1285,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -1301,7 +1307,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -1312,20 +1318,20 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.21",
+            "version": "v3.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "0d41dd7d95ed179aed6a13393b0f4f97bfa2d25c"
+                "reference": "a9c4dfbf653023b668c282e4e02609d131f4057a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/0d41dd7d95ed179aed6a13393b0f4f97bfa2d25c",
-                "reference": "0d41dd7d95ed179aed6a13393b0f4f97bfa2d25c",
+                "url": "https://api.github.com/repos/symfony/process/zipball/a9c4dfbf653023b668c282e4e02609d131f4057a",
+                "reference": "a9c4dfbf653023b668c282e4e02609d131f4057a",
                 "shasum": ""
             },
             "require": {
@@ -1361,20 +1367,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-02T21:24:08+00:00"
+            "time": "2019-04-08T16:15:54+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.21",
+            "version": "v3.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "554a59a1ccbaac238a89b19c8e551a556fd0e2ea"
+                "reference": "212a27b731e5bfb735679d1ffaac82bd6a1dc996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/554a59a1ccbaac238a89b19c8e551a556fd0e2ea",
-                "reference": "554a59a1ccbaac238a89b19c8e551a556fd0e2ea",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/212a27b731e5bfb735679d1ffaac82bd6a1dc996",
+                "reference": "212a27b731e5bfb735679d1ffaac82bd6a1dc996",
                 "shasum": ""
             },
             "require": {
@@ -1420,7 +1426,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-01T13:45:19+00:00"
+            "time": "2019-03-25T07:48:46+00:00"
         },
         {
             "name": "zonuexe/http-accept-language",
