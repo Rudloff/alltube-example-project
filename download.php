@@ -2,16 +2,17 @@
 /**
  * Example showing how to download a video to the server.
  */
+
 use Alltube\Config;
 use Alltube\Video;
 use GuzzleHttp\Client;
 
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 Config::setOptions(
     [
         'youtubedl' => '/usr/lib/python3/dist-packages/youtube_dl/__main__.py',
-        'python'    => '/usr/bin/python',
+        'python' => '/usr/bin/python',
     ]
 );
 
@@ -27,7 +28,7 @@ $tmp = tempnam(null, 'alltube');
 $urls = $video->getUrl();
 
 // Output the name of the temporary file.
-echo 'Downloading video to '.$tmp.PHP_EOL;
+echo 'Downloading video to ' . $tmp . PHP_EOL;
 
 // Download the video to the temporary file.
 $client->request('GET', $urls[0], ['sink' => $tmp]);

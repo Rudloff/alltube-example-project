@@ -2,15 +2,16 @@
 /**
  * Example showing how to get information about a video.
  */
+
 use Alltube\Config;
 use Alltube\Video;
 
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 Config::setOptions(
     [
         'youtubedl' => '/usr/lib/python3/dist-packages/youtube_dl/__main__.py',
-        'python'    => '/usr/bin/python',
+        'python' => '/usr/bin/python',
     ]
 );
 
