@@ -4,6 +4,7 @@
  */
 
 use Alltube\Config;
+use Alltube\Exception\EmptyUrlException;
 use Alltube\Video;
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -18,11 +19,19 @@ Config::setOptions(
 $video = new Video('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
 // Extract the URL of a video from a webpage
-var_dump($video->getUrl());
+try {
+    var_dump($video->getUrl());
+} catch (EmptyUrlException $e) {
+    die('youtube-dl returned an empty URL.');
+}
 
 // Get a specific format
 $video = new Video('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'worst');
-var_dump($video->getUrl());
+try {
+    var_dump($video->getUrl());
+} catch (EmptyUrlException $e) {
+    die('youtube-dl returned an empty URL.');
+}
 
 // Get the whole decoded JSON extracted by youtube-dl
 var_dump($video->getJson());

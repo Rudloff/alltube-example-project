@@ -22,7 +22,11 @@ $video = new Video('https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'best');
 $tmp = tempnam(null, 'alltube');
 
 // Get a stream containing the converted MP3.
-$stream = $video->getAudioStream();
+try {
+    $stream = $video->getAudioStream();
+} catch (Exception $e) {
+    die('Could not create stream. Protocol is probably not supported.');
+}
 
 // Output the name of the temporary file.
 echo 'Converting MP3 to ' . $tmp . PHP_EOL;
