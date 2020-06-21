@@ -3,22 +3,21 @@
  * Example showing how to download a video to the server.
  */
 
-use Alltube\Config;
-use Alltube\Exception\EmptyUrlException;
-use Alltube\Video;
+use Alltube\Library\Downloader;
+use Alltube\Library\Exception\AlltubeLibraryException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-Config::setOptions(
-    [
-        'youtubedl' => '/usr/lib/python3/dist-packages/youtube_dl/__main__.py',
-        'python' => '/usr/bin/python',
-    ]
+
+$downloader = new Downloader(
+    '/usr/lib/python3/dist-packages/youtube_dl/__main__.py',
+    [],
+    '/usr/bin/python'
 );
 
-$video = new Video('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+$video = $downloader->getVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
 // Create a new Guzzle client.
 $client = new Client();
@@ -29,8 +28,8 @@ $tmp = tempnam(null, 'alltube');
 // Get the URL of the video.
 try {
     $urls = $video->getUrl();
-} catch (EmptyUrlException $e) {
-    die('youtube-dl returned an empty URL.');
+} catch (AlltubeLibraryException $e) {
+    die('Something went wrong.');
 }
 
 // Output the name of the temporary file.
