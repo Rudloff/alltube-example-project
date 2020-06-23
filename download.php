@@ -5,8 +5,7 @@
 
 use Alltube\Library\Downloader;
 use Alltube\Library\Exception\AlltubeLibraryException;
-use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
+use function GuzzleHttp\Psr7\stream_for;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -19,15 +18,12 @@ $downloader = new Downloader(
 
 $video = $downloader->getVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
-// Create a new Guzzle client.
-$client = new Client();
-
 // Create a temporary file.
 $tmp = tempnam(null, 'alltube');
 
-// Get the URL of the video.
+// Get a stream containing the video.
 try {
-    $urls = $video->getUrl();
+    $body = $downloader->getHttpResponse($video)->getBody();
 } catch (AlltubeLibraryException $e) {
     die('Something went wrong.');
 }
@@ -36,8 +32,7 @@ try {
 echo 'Downloading video to ' . $tmp . PHP_EOL;
 
 // Download the video to the temporary file.
-try {
-    $client->request('GET', $urls[0], ['sink' => $tmp]);
-} catch (GuzzleException $e) {
-    die('Error when downloading the file.');
+$stream = stream_for(fopen($tmp, 'w'));
+while (!$body->eof()) {
+    $stream->write($body->read(4096));
 }
